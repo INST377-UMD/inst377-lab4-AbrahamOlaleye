@@ -1,0 +1,75 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: left;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    border: 2px solid rgb(249, 249, 249);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #663399;
+    color: white;
+    width: 500px;
+    height: auto;
+}
+
+.right .section {
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#changeColorSection {
+    height: 20px;
+}
+
+#addTextSection {
+    height: 20px;
+    margin-top: 35px;
+}
+
+.section button, .section input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffffbb;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid purple;
+    flex: 1;
+    max-width: 300px;
+}
